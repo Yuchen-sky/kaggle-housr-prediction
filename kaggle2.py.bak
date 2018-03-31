@@ -139,6 +139,7 @@ ridge=pd.Series(lasso,index=alphas)
 ridge.plot()
 plt.show()
 
+'''
 test_xgb_model=XGBRegressor(n_estimators=6000,max_depth=3,learning_rate=0.02,subsample=0.9,colsample_bytree=0.6)
 test_xgb_model.fit(xtr,Y_)
 
@@ -157,3 +158,4 @@ output=0.7*b+0.1*a+0.2*c
 preds = np.expm1(output)
 solution = pd.DataFrame({"id":test.Id, "SalePrice":preds})
 solution.to_csv("ridge.csv", index = False)
+'''
