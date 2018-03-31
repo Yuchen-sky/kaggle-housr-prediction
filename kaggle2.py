@@ -139,6 +139,7 @@ ridge=pd.Series(lasso,index=alphas)
 ridge.plot()
 plt.show()
 
+
 test_xgb_model=XGBRegressor(n_estimators=6000,max_depth=3,learning_rate=0.02,subsample=0.9,colsample_bytree=0.6)
 test_xgb_model.fit(xtr,Y_)
 
